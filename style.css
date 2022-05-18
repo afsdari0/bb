@@ -2,13 +2,15 @@
 
 *{
     margin: 0;
-    padding: 0%;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
 body {
-    background-color: #ffcbdb;
+
+ background-color: #ad75ad;
+    
 }
 
 .d-linda-img {
@@ -16,7 +18,6 @@ body {
 }
 
 .d-all {
-    min-height: 100%vh !important;
     display: flex;
     flex-direction: column;
     align-items: center;
