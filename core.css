@@ -71,3 +71,35 @@ h1 {
 .core-vol:hover {
     height: 90px;
 }
+
+@media (max-width: 404px) {
+    .cores {
+        margin-top: 100px;
+    }
+
+    .come-img1 {
+        height: 50px;
+        margin-right: 10px;
+        margin-top: 230px;
+    }
+    .come-img2 {
+        height: 40px;
+        margin-right: 10px;
+        margin-top: -300px;
+    }
+    .come-img3 {
+        height: 64px;
+        margin-right: 10px;
+        margin-top: 150px;
+    }
+    .come-img4 {
+        height: 20px;
+        margin-right: 10px;
+        margin-top: 0px;
+    }
+    .come-img5 {
+        height: 83px;
+        margin-right: 10px;
+        margin-top: 220px;
+    }
+}

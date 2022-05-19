@@ -8,8 +8,9 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
+    
+    min-height: 100vh;
+    width: 100%vw;
     background: linear-gradient(150deg, #ee609c 35%, #009efd 100%);
     display: flex;
     flex-direction: column;
@@ -85,7 +86,7 @@ header h1 {
     height: 100%;
     display: flex;
     align-items: center;
-    color: #495aff;
+    color: #21d4fd;
 }
 
 .slide-s2 {
@@ -95,7 +96,7 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #495aff;
+    color: #21d4fd;
 }
 
 .slide-s3 {
@@ -147,7 +148,7 @@ header h1 {
 }
 
 .p-s1:hover {
-    color: #21d4fd;
+    color: #e8198b;
 }
 
 .core-s1 {
@@ -168,7 +169,7 @@ header h1 {
 .img-s2 {
     height: 200px;
     border-radius: 10px;
-    margin-left: %;
+    
 }
 
 .p-s2 {
@@ -183,7 +184,7 @@ header h1 {
 }
 
 .p-s2:hover {
-    color: #21d4fd;
+    color: #e8198b;
 }
 
 .flex-s3 {
@@ -214,4 +215,74 @@ header h1 {
 
 .img-s3-core:hover {
     height: 85px;
+}
+
+@media (max-width: 667px) {
+
+    .content {
+        width: 350px;
+        height: 500px;
+    }
+    #slide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-s1 {
+        margin-top: 12%;
+        height: 150px;
+        border-radius: 10px;
+        margin-left: 0;
+    }
+
+    .p-s1{
+        width: 300px;
+        margin-left: 0;
+        font-size: px;
+        font-weight: 600;
+        letter-spacing: 0;
+        
+    }
+
+    .core-s1 {
+        margin-top: 5%;
+        height: 60px;
+        animation: animate 5s linear infinite;
+        margin-left: 0;
+    }
+
+    .slide-s2 {
+        justify-content: start;
+    }
+
+    .img-s2 {
+        height: 150px;
+        margin-left: 0;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+
+    .p-s2 {
+        width: 300px;
+        margin-left: 0;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px; 
+    }
+
+    .flex-s3 {
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .img-s3 {
+        height: 140px;
+        
+    }
+
+    .img-s3-core:hover {
+        height: 75px;
+    }
 }
