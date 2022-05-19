@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Raleway:wght@300&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(150deg, #ee609c 35%, #009efd 100%);
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Sarala', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.cores {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.come-img1 {
+    margin-right: 100px;
+    margin-top: 230px;
+}
+.come-img2 {
+    margin-right: 100px;
+    margin-top: -300px;
+}
+.come-img3 {
+    margin-right: 50px;
+    margin-top: 150px;
+}
+.come-img4 {
+    margin-right: 100px;
+    margin-top: 0px;
+}
+.come-img5 {
+    margin-right: 100px;
+    margin-top: 220px;
+}
+
+.d-core-a {
+    animation: animate 5s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+@keyframes animate{
+    0%,100%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+}
+
+.core-vol {
+    height: 40px;
+    margin-left: 30px;
+    transition: 1s;
+}
+
+.core-vol:hover {
+    height: 90px;
+}

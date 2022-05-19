@@ -8,63 +8,152 @@
 }
 
 body {
-
- background-color: #ad75ad;
-    
-}
-
-.d-linda-img {
-    /*height: 200px;*/
-}
-
-.d-all {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(150deg, #ee609c 35%, #009efd 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
 }
 
-.d-txt {
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+header h1 {
+    font-size: 45px;
     font-family: 'Sarala', sans-serif;
-    font-weight: 600;
-    
-    color: #ad75ad ;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
 }
 
-.t-h1 {
-    margin-top: 40px;
-    letter-spacing: 1px;
-    transition: 1s;
-    cursor: pointer;
-    margin-left: 40px;
+.content {
+    margin-top: 20px;
+    width: 800px;
+    height: 450px;
+    border-radius: 20px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%);
 }
 
-.t-h1:hover {
-    color: #a031bc;
+.inp-sli {
+    display: none;
 }
 
-.t-p {
-    margin: 10px;
-    cursor: pointer;
-    width: 350px;
-    margin-left: 25px;
-    transition: 1s;
-}
-
-.t-p:hover{
-    color: #a031bc;
-}
-
-.d-core {
+.slides {
     display: flex;
-    flex-direction: row;
+    width: 300%;
+    height: 100%;
+}
+
+#slide1:checked ~ .slide-s1 {
+    margin-left: 0;
+    opacity: 1;
+}
+
+#slide2:checked ~ .slide-s1 {
+    margin-left: -33.34%;
+}
+
+#slide2:checked ~ .slide-s2 {
+    opacity: 1;
+}
+
+#slide3:checked ~ .slide-s1 {
+    margin-left: -66.68%;
+}
+
+#slide3:checked ~ .slide-s3 {
+    opacity: 1;
+}
+
+#slide {
+    width: 33.34%;
+    opacity: 0;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+.slide-s1 {
+    background: linear-gradient(150deg, #e8198b 0%, #3d99be 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #495aff;
+}
+
+.slide-s2 {
+    background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #495aff;
+}
+
+.slide-s3 {
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.navegation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 60px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.4s;
 
 }
 
-.d-core-a {
+.bar:hover {
+    background-color: rgb(255, 253, 253);
+    opacity: 0.7;
+}
+
+.img-s1 {
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 13%;
+}
+
+.p-s1{
+    font-family: 'Sarala', sans-serif;
+    width: 350px;
+    margin-left: 3%;
+    font-size: px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .4s;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+}
+
+.p-s1:hover {
+    color: #21d4fd;
+}
+
+.core-s1 {
+    height: 60px;
     animation: animate 5s linear infinite;
-    animation-delay: calc(-1s * var(--i));
+    margin-left: 3%;
 }
 
 @keyframes animate{
@@ -76,10 +165,53 @@ body {
     }
 }
 
-.come-img2 {
-margin-top: -200px;
+.img-s2 {
+    height: 200px;
+    border-radius: 10px;
+    margin-left: %;
 }
 
-.come-img4 {
-    margin-top: -200px;
-    }
+.p-s2 {
+    font-family: 'Sarala', sans-serif;
+    width: 350px;
+    margin-left: 3%;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: .4s; 
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+}
+
+.p-s2:hover {
+    color: #21d4fd;
+}
+
+.flex-s3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.img-s3 {
+    height: 220px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 9%;
+}
+
+.core-s3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-s3-core {
+    cursor: pointer;
+    height: 40px;
+    transition: 1s;
+}
+
+.img-s3-core:hover {
+    height: 85px;
+}
